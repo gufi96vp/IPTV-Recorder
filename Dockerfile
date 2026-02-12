@@ -18,3 +18,5 @@ COPY requirements.txt requirements.txt /app/
 COPY requirements-dev.txt requirements-dev.txt /app/
 RUN pwd && ls -la && pip install --upgrade pip && pip install -r requirements.txt
 RUN chmod 777 .
+COPY . .
+
